@@ -1,0 +1,19 @@
+{
+  "version": "4.0.0-*",
+  "buildOptions": {
+    "debugType": "portable"
+  },
+  "dependencies": {
+    "NSubstitute": "2.0.0-rc",
+    "Autofac": "4.2.0"
+  },
+  "frameworks": {
+    "net45":  {},
+    "netstandard1.6": {
+      "imports": [ "dotnet" ],
+      "dependencies": {
+        "NETStandard.Library": "1.6.1-preview1-24530-04"
+      }
+    }
+  }
+}

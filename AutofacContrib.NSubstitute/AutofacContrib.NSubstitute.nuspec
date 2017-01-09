@@ -5,7 +5,7 @@
        AutofacContrib.NSubstitute
     </id>
     <version>
-       3.0.0
+       4.0.0-alpha
     </version>
     <authors>
        Miguel Madero, Robert Moore and Matt Davies
@@ -28,16 +28,5 @@
     <language>
        en-US
     </language>
-    <dependencies>
-       <dependency id="NSubstitute" version="1.10.0.0" />
-       <dependency id="Autofac" version="3.5.2" />
-    </dependencies>
   </metadata>
-  <files>
-    <file src="readme.txt" />
-    <file src="bin\Release\AutofacContrib.NSubstitute.dll" target="lib\NET40" />
-    <file src="bin\Release\AutofacContrib.NSubstitute.pdb" target="lib\NET40" />
-    <file src="bin\Release\AutofacContrib.NSubstitute.xml" target="lib\NET40" />
-    <file src="**\*.cs" exclude="obj\**\*.*" target="src" />
-  </files>
 </package>
