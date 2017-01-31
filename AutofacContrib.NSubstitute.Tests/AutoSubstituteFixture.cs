@@ -103,13 +103,10 @@ namespace AutofacContrib.NSubstitute.Tests
         [Test]
         public void NormalSetupationsAreVerified()
         {
-            Assert.Throws<ReceivedCallsException>(() =>
+            using (var mock = new AutoSubstitute())
             {
-                using (var mock = new AutoSubstitute())
-                {
-                    SetUpSetupations(mock);
-                }
-            });
+                Assert.That(() => SetUpSetupations(mock), Throws.TypeOf<ReceivedCallsException>());
+            }
         }
 
         [Test]
